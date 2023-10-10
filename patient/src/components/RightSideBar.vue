@@ -12,7 +12,7 @@
                 <img src="https://cdn.quasar.dev/img/avatar6.jpg" />
             </q-avatar>
             <q-item-label caption class="q-my-md">Your activity Today</q-item-label>
-            <div class="text-h5">86%</div>
+            <div class="text-h5">85%</div>
         </div>
 
         <q-card class="q-mx-md" flat bordered>
