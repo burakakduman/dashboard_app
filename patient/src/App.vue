@@ -11,14 +11,13 @@
 <script>
 import SideBar from './components/SideBar.vue';
 import RightSideBar from './components/RightSideBar.vue';
-
 export default {
   name: 'LayoutDefault',
 
   components: {
     SideBar,
-    RightSideBar
-  },
+    RightSideBar,
+},
 
   setup() {
     return {

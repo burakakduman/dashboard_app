@@ -9,6 +9,7 @@
       <q-space></q-space>
       <q-btn color="white" text-color="black" icon="fas fa-moon" />
     </q-toolbar>
+    <q-separator class="q-mt-md"></q-separator>
     <q-toolbar>
       <h6 class="text-weight-bolder">Dashboard</h6>
       <q-space></q-space>
@@ -41,6 +42,8 @@
               <q-chip color="green-1" text-color="green-3" icon="fas fa-chevron-up">51%</q-chip>
             </div>
           </q-card>
+          <!-- route -->
+          
         </div>
         <div class="col-6 col-md-6 col-xs-6">
           <q-card class="q-mx-md q-pa-md" bordered>
@@ -133,7 +136,7 @@
             </div>
             <div class="col-6">
               <div class="flex justify-end row">
-                <q-toggle color="gre" v-model="selection" val="" />
+                <q-toggle color="green" v-model="selection" val="" />
               </div>
               <div class="flex justify-end row">
                 <q-btn round icon="fas fa-pencil-alt" size="10px" color="black" class="q-mr-sm"></q-btn>
@@ -177,7 +180,7 @@
                 10:00 am
               </div>
             </div>
-            <div class="col-9">
+            <!-- <div class="col-9">
               <q-card class="q-px-sm colorCard" bordered flat>
                 <q-item>
                   <q-item-section avatar>
@@ -195,7 +198,7 @@
                   </q-item-section>
                 </q-item>
               </q-card>
-            </div>
+            </div> -->
           </div>
         </q-card>
       </div>

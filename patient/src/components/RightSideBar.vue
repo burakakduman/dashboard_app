@@ -1,5 +1,5 @@
 <template>
-    <q-drawer show-if-above side="right" bprdered :width="300">
+    <q-drawer show-if-above side="right" brdered :width="300">
         <q-toolbar class="q-mt-lg">
             <q-space />
             <q-btn round icon="notifications">
