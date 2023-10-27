@@ -1,14 +1,5 @@
 <template body>
   <div class="q-pa-md body ">
-    <!-- <div class="justify-between flex flex-center">
-      <div class="row flex-center">
-        <h3 class="text-muted">Dashboard One</h3>
-        <q-btn round icon="fas fa-chevron-right" color="green"></q-btn>
-        
-      </div>
-      <hr>
-    </div> -->
-
     <div class="col-8">
       <q-toolbar class="q-ma-sm">
         <h3 class="text-muted">Dashboard Two</h3>
@@ -20,12 +11,10 @@
           <AccountDash />
         </div>
         <div class="col-8">
-
           <hr>
           <!-- SECTION -->
           <div class="container">
             <div class="row">
-
               <div class="q-pa-md col-md-4">
                 <q-card class="my-card bg-purple text-white">
                   <div class="row">
@@ -84,10 +73,7 @@
                     <q-card-section class="bg-green-3">
                       <div class="text-h6">Total Graph</div>
                     </q-card-section>
-
-
                     <q-separator></q-separator>
-
                     <q-card-section>
                       <div>
                         <GraphCompBar />
@@ -123,7 +109,6 @@
                         </q-circular-progress>
                         <div>
                           <q-badge color="green-2" rounded class="q-mr-sm" />Woman 40%
-
                         </div>
                         <div class="q-mb-xl">
                           <q-badge color="green-7" rounded class="q-mr-sm" />Man 60%
@@ -137,12 +122,7 @@
           </div>
         </div>
       </div>
-
-
-
     </div>
-
-
   </div>
 </template>
 <script>

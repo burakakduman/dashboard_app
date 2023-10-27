@@ -1,35 +1,32 @@
 <template class="body">
-    <h3 class="text-center">List</h3>
+    <h3 class="text-center">LIST</h3>
     <hr>
     <div class="q-pa-xl">
-        <q-form @submit.prevent="addTodo">
+        <q-form @submit.prevent="addTodo" class="q-mb-md">
             <div>
                 <div>
-                    <q-input v-model="newTodo" label="Add a new todo" class="" />
-                    <q-btn type="submit" label="Add" color="primary" />
-
+                    <q-input v-model="newTodo" label="Add a new todo" class="">
+                        <template v-slot:append>
+                            <q-btn type="submit" @click="addTodo" label="Add" color="primary" />
+                        </template>
+                    </q-input>
 
                 </div>
             </div>
-            <q-hr size="3px" color="" />
         </q-form>
-        <q-hr />
-        <hr>
         <q-list>
             <q-item v-for="todo in todos" :key="todo.id" clickable>
-                <!-- <q-item-label>{{ todo.text }}</q-item-label> -->
-                <div>
-                    <q-input filled color="purple-12" v-model="todo.text" label="Label">
+                <div class="col-12">
+                    <q-input filled color="purple-12" v-model="todo.text" label="Task:" class="horizontal-input  ">
                         <template v-slot:append>
                             <q-btn color="negative" label="Delete" @click="deleteTodo(todo.id)" />
                         </template>
                     </q-input>
-                    <!-- <q-item-section side>
-                        <q-btn color="negative" label="Delete" @click="deleteTodo(todo.id)" />
-                    </q-item-section> -->
                 </div>
             </q-item>
+
         </q-list>
+
 
     </div>
     <div class=" q-pa-md">
@@ -97,5 +94,14 @@ export default {
 <style scoped>
 .qinput {
     width: 100% !important;
+    height: auto !important;
+}
+
+.horizontal-input {
+    display: flex !important;
+    /* flex-direction: row !important; */
+    justify-content: space-between !important;
+    align-items: center !important;
+    color: blue !important;
 }
 </style>

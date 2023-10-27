@@ -26,13 +26,11 @@
                         </q-item-section>
                     </q-item>
                 </router-link>
-
                 <q-item clickable :active="link === 'chart'" @click="link = 'chart'" active-class="">
                     <q-item-section avatar class="flex flex-center column">
                         <q-icon name="fas fa-chart-bar" />
                     </q-item-section>
                 </q-item>
-
                 <q-item clickable :active="link === 'cog'" @click="link = 'cog'" active-class="">
                     <q-item-section avatar class="flex flex-center column">
                         <q-icon name="fas fa-cog" />
@@ -54,7 +52,6 @@
         </div>
     </q-drawer>
 </template>
-
 <script>
 import { ref } from "vue";
 export default {
@@ -65,8 +62,7 @@ export default {
     }
 }
 </script>
-
-<style>
+<style >
 .colorBackGround {
     background: #8ac186;
 }
@@ -77,7 +73,6 @@ export default {
 
 .q-item_section--avatar {
     color: white !important;
-
 }
 
 .q-item {
@@ -86,5 +81,4 @@ export default {
 
 .navbuton {
     text-decoration: none !important;
-}
-</style>
+}</style>

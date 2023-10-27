@@ -42,8 +42,6 @@
               <q-chip color="green-1" text-color="green-3" icon="fas fa-chevron-up">51%</q-chip>
             </div>
           </q-card>
-          <!-- route -->
-          
         </div>
         <div class="col-6 col-md-6 col-xs-6">
           <q-card class="q-mx-md q-pa-md" bordered>
@@ -55,8 +53,6 @@
           </q-card>
         </div>
       </div>
-      <!-- 
-      </div> -->
       <div class="col-12">
         <q-card class="q-mx-md q-pa-md doctors" bordered>
           <div class="text-overline">Statistic</div>
@@ -94,7 +90,6 @@
     <q-toolbar>
       <div class="text-overline">Events</div>
       <q-space></q-space>
-
       <div class="text-overline">Your patients today</div>
       <div class="text-caption text-green q-ml-md">All patients</div>
       <q-icon name="fas fa-chevron-right" size="10px" class="" color="green-7" />
@@ -180,25 +175,6 @@
                 10:00 am
               </div>
             </div>
-            <!-- <div class="col-9">
-              <q-card class="q-px-sm colorCard" bordered flat>
-                <q-item>
-                  <q-item-section avatar>
-                    <q-avatar>
-                      <img src="https://cdn.quasar.dev/img/avatar2.jpg" />
-                    </q-avatar>
-                  </q-item-section>
-
-                  <q-item-section>
-                    <q-item-label>Sarah Hosten</q-item-label>
-                    <q-item-label caption>Diagnosis: Stroke</q-item-label>
-                  </q-item-section>
-                  <q-item-section side>
-                    <q-icon name="fas fa-ellipsis-v" color="" />
-                  </q-item-section>
-                </q-item>
-              </q-card>
-            </div> -->
           </div>
         </q-card>
       </div>
@@ -207,9 +183,8 @@
 </template>
 
 <script>
-// @ is an alias to /src
+
 import { ref } from "vue";
-// import { shuffle } from "lodash";
 
 export default {
   name: "HomeView",

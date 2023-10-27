@@ -2,9 +2,33 @@
     <q-drawer show-if-above side="right" brdered :width="300">
         <q-toolbar class="q-mt-lg">
             <q-space />
-            <q-btn round icon="notifications">
+            <!-- <q-btn round icon="notifications">
                 <q-badge floating color="green" rounded />
-            </q-btn>
+            </q-btn> -->
+            <q-btn-dropdown round icon="notifications">
+                <!-- <q-badge floating color="green" rounded /> -->
+                <div class="row no-wrap q-pa-md">
+                    <div class="column">
+                        <div class="text-h6 q-mb-md">Settings</div>
+                        <q-toggle v-model="mobileData" icon="alarm" label="Notifications" />
+                        <q-toggle v-model="bluetooth" label="Vibrations" checked-icon="check" color="green"
+                            unchecked-icon="clear" />
+                    </div>
+
+                    <q-separator vertical inset class="q-mx-lg" />
+
+                    <div class="column items-center">
+                        <q-avatar size="72px">
+                            <img src="https://cdn.quasar.dev/img/avatar6.jpg">
+                        </q-avatar>
+
+                        <div class="text-subtitle1 q-mt-md q-mb-xs">John Doe</div>
+
+                        <q-btn color="primary" label="Logout" push size="sm" v-close-popup />
+                    </div>
+                </div>
+            </q-btn-dropdown>
+            <!--  -->
         </q-toolbar>
 
         <div class="flex flex-center column">
@@ -55,7 +79,14 @@
 <style></style>
 
 <script>
-export default {
+import { ref } from 'vue'
 
+export default {
+    setup() {
+        return {
+            mobileData: ref(false),
+            bluetooth: ref(false)
+        }
+    }
 }
 </script>
